@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #4267b2;" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaFx.EmailEnquiriesController">
+   <children>
+      <Button layoutX="630.0" layoutY="530.0" mnemonicParsing="false" onMouseClicked="#btnBackToHome" style="-fx-background-color: white;" text="Back To Home">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="257.0" layoutY="81.0" text="Email Enquiries" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="taEnquiry" layoutX="192.0" layoutY="213.0" prefHeight="236.0" prefWidth="488.0" />
+      <Button layoutX="625.0" layoutY="467.0" mnemonicParsing="false" onMouseClicked="#btnSendEnquiry" style="-fx-background-color: white;" text="Send">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="110.0" layoutY="172.0" text="Type Your Message" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbPError" layoutX="351.0" layoutY="498.0" prefHeight="31.0" prefWidth="232.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

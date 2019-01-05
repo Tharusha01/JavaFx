@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0"
+            style="-fx-background-color: #4267b2;" xmlns="http://javafx.com/javafx/8.0.161"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaFx.AdminController">
+   <children>
+      <Label layoutX="246.0" layoutY="63.0" text="Welcome to Jeff" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Button layoutX="650.0" layoutY="540.0" mnemonicParsing="false" onMouseClicked="#btnALogout" text="Logout">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="291.0" layoutY="185.0" mnemonicParsing="false" onMouseClicked="#btnAddStaff" prefHeight="44.0" prefWidth="219.0" style="-fx-background-color: white;" text="Add Staff">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="291.0" layoutY="271.0" mnemonicParsing="false" onMouseClicked="#btnViewLogFile" prefHeight="44.0" prefWidth="219.0" style="-fx-background-color: white;" text="View Log File">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="291.0" layoutY="359.0" mnemonicParsing="false" onMouseClicked="#btnVeiwUsers" prefHeight="44.0" prefWidth="219.0" style="-fx-background-color: white;" text="Veiw users">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="291.0" layoutY="444.0" mnemonicParsing="false" onMouseClicked="#btnCEnquires" prefHeight="44.0" prefWidth="219.0" style="-fx-background-color: white;" text="Customer Enquiries">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

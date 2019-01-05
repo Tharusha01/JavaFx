@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0"
+            style="-fx-background-color: #4267b2;" xmlns="http://javafx.com/javafx/8.0.161"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaFx.CustomerController">
+   <children>
+      <Label layoutX="161.0" layoutY="46.0" text="Welcome Jeff's Fishing Shark " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Button layoutX="650.0" layoutY="530.0" mnemonicParsing="false" onMouseClicked="#btnLogout" style="-fx-background-color: white;" text="Logout">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="324.0" layoutY="213.0" mnemonicParsing="false" onMouseClicked="#btnBuyProducts" prefHeight="44.0" prefWidth="171.0" style="-fx-background-color: white;" text="Buy Products">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="324.0" layoutY="286.0" mnemonicParsing="false" onMouseClicked="#btnEmailEnquiries" style="-fx-background-color: white;" text="Email Enquiries">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="324.0" layoutY="359.0" mnemonicParsing="false" onMouseClicked="#btnUpdateProfile" prefHeight="44.0" prefWidth="171.0" style="-fx-background-color: white;" text="Update Profile">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

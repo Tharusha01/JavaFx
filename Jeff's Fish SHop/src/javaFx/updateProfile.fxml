@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #4267b2;" xmlns="http://javafx.com/javafx/8.0.161"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaFx.UpdateProfileController">
+   <children>
+      <Button layoutX="630.0" layoutY="530.0" mnemonicParsing="false" onMouseClicked="#btnBackToHome" style="-fx-background-color: white;" text="Back To Home">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="261.0" layoutY="53.0" text="Update Profile" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableUser" layoutX="4.0" layoutY="402.0" prefHeight="80.0" prefWidth="792.0">
+        <columns>
+          <TableColumn fx:id="tbCName" prefWidth="180.0" text="Name" />
+          <TableColumn fx:id="tbCEmail" minWidth="0.0" prefWidth="217.0" text="Email" />
+            <TableColumn fx:id="tbCPassword" minWidth="0.0" prefWidth="196.0" text="Password" />
+            <TableColumn fx:id="tbCAddess" minWidth="0.0" prefWidth="197.0" text="Address" />
+        </columns>
+      </TableView>
+      <Button layoutX="349.0" layoutY="499.0" mnemonicParsing="false" onMouseClicked="#btnLoadUserDetails" style="-fx-background-color: white;" text="Load Details">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfUpdateName" layoutX="309.0" layoutY="143.0" promptText="Enter Your Name" />
+      <TextField fx:id="tfUpdateEmail" layoutX="309.0" layoutY="192.0" promptText="Enter Your Email" />
+      <TextField fx:id="tfUpdateAddress" layoutX="309.0" layoutY="295.0" promptText="Enter Your Address" />
+      <PasswordField fx:id="tfUpdatePassword" layoutX="309.0" layoutY="244.0" promptText="Enter Your Password" />
+      <Button layoutX="362.0" layoutY="347.0" mnemonicParsing="false" onMouseClicked="#btnUpdate" style="-fx-background-color: white;" text="Update">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="211.0" layoutY="148.0" prefHeight="21.0" prefWidth="85.0" text="Name        :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="211.0" layoutY="197.0" prefHeight="21.0" prefWidth="85.0" text="Email         :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="211.0" layoutY="249.0" prefHeight="21.0" prefWidth="85.0" text="Password   :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="211.0" layoutY="300.0" prefHeight="21.0" prefWidth="85.0" text="Address     :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbPError" layoutX="203.0" layoutY="537.0" prefHeight="39.0" prefWidth="424.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

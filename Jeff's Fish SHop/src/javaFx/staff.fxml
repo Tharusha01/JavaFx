@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #4267b2;" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaFx.StaffController">
+   <children>
+      <Label layoutX="232.0" layoutY="50.0" text="Welcome " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Button layoutX="650.0" layoutY="530.0" mnemonicParsing="false" onMouseClicked="#btnLogout" text="Logout">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="lbsName" layoutX="419.0" layoutY="50.0" prefHeight="58.0" prefWidth="322.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Button layoutX="309.0" layoutY="245.0" mnemonicParsing="false" onMouseClicked="#btnVeiwLogFile" prefHeight="44.0" prefWidth="211.0" style="-fx-background-color: white;" text="View Log File">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="309.0" layoutY="325.0" mnemonicParsing="false" onMouseClicked="#btnCEnquires" style="-fx-background-color: white;" text="Customer Enquiries">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #4267b2;" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaFx.CustomerEnquiriesController">
+
+    <children>
+        <Button layoutX="630.0" layoutY="530.0" mnemonicParsing="false" onMouseClicked="#btnBackToHome" style="-fx-background-color: white;" text="Logout">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Button>
+      <Label layoutX="314.0" layoutY="41.0" text="Enquiries" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableEnquiries" layoutX="4.0" layoutY="128.0" prefHeight="340.0" prefWidth="793.0">
+         <columns>
+            <TableColumn fx:id="tbCusEEmail" prefWidth="175.0" text="Customer Email" />
+            <TableColumn fx:id="tbCusMessage" prefWidth="615.0" text="Message" />
+         </columns>
+      </TableView>
+      <Button layoutX="360.0" layoutY="486.0" mnemonicParsing="false" onMouseClicked="#btnLoadEnquiryDetails" style="-fx-background-color: white;" text="Load Details">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="lbPError" layoutX="308.0" layoutY="528.0" prefHeight="31.0" prefWidth="293.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+    </children>
+
+</AnchorPane>
